@@ -1,27 +1,24 @@
 {
   "name": "@billai/shared",
-  "version": "0.1.1",
-  "type": "module",
-  "main": "dist/index.js",
+  "version": "0.1.2",
+  "main": "dist/index.cjs",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs"
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
     }
   },
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "echo 'dist already built'",
-    "prepare": "echo 'dist already built'"
+    "build": "tsup src/index.ts --dts --format cjs,esm --out-dir dist"
   },
   "dependencies": {
     "jose": "^6.1.0"
   },
-  "devDependencies": {},
   "publishConfig": {
     "access": "public"
   }

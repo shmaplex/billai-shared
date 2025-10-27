@@ -1,3 +1,174 @@
+"use strict";
+var __create = Object.create;
+var __defProp = Object.defineProperty;
+var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+var __getOwnPropNames = Object.getOwnPropertyNames;
+var __getProtoOf = Object.getPrototypeOf;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __export = (target, all) => {
+  for (var name in all)
+    __defProp(target, name, { get: all[name], enumerable: true });
+};
+var __copyProps = (to, from, except, desc) => {
+  if (from && typeof from === "object" || typeof from === "function") {
+    for (let key of __getOwnPropNames(from))
+      if (!__hasOwnProp.call(to, key) && key !== except)
+        __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
+  }
+  return to;
+};
+var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(
+  // If the importer is in node compatibility mode or this is not an ESM
+  // file that has been converted to a CommonJS file using a Babel-
+  // compatible transform (i.e. "__esModule" has not been set), then set
+  // "default" to the CommonJS "module.exports" for node compatibility.
+  isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
+  mod
+));
+var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
+
+// src/index.ts
+var index_exports = {};
+__export(index_exports, {
+  AI_FEATURES: () => AI_FEATURES,
+  API_KEY_ENVIRONMENTS: () => API_KEY_ENVIRONMENTS,
+  API_KEY_PREFIXES: () => API_KEY_PREFIXES,
+  AddAllowedOriginInputSchema: () => AddAllowedOriginInputSchema,
+  AlertBaseSchema: () => AlertBaseSchema,
+  AlertDetailedSchema: () => AlertDetailedSchema,
+  AlertReferenceSchema: () => AlertReferenceSchema,
+  AllowedOriginBaseSchema: () => AllowedOriginBaseSchema,
+  AllowedOriginDetailedSchema: () => AllowedOriginDetailedSchema,
+  AllowedOriginReferenceSchema: () => AllowedOriginReferenceSchema,
+  ApiKeyBaseSchema: () => ApiKeyBaseSchema,
+  ApiKeyDetailedSchema: () => ApiKeyDetailedSchema,
+  ApiKeyReferenceSchema: () => ApiKeyReferenceSchema,
+  AppApiKeyBaseSchema: () => AppApiKeyBaseSchema,
+  AppApiKeyDetailedSchema: () => AppApiKeyDetailedSchema,
+  AppApiKeyReferenceSchema: () => AppApiKeyReferenceSchema,
+  AppBaseSchema: () => AppBaseSchema,
+  AppDetailedSchema: () => AppDetailedSchema,
+  AppMetricBaseSchema: () => AppMetricBaseSchema,
+  AppMetricDetailedSchema: () => AppMetricDetailedSchema,
+  AppMetricReferenceSchema: () => AppMetricReferenceSchema,
+  AppReferenceSchema: () => AppReferenceSchema,
+  AuditLogBaseSchema: () => AuditLogBaseSchema,
+  AuditLogDetailedSchema: () => AuditLogDetailedSchema,
+  AuditLogReferenceSchema: () => AuditLogReferenceSchema,
+  AuthResponseSchema: () => AuthResponseSchema,
+  COOKIE_NAME: () => COOKIE_NAME,
+  COOKIE_OPTIONS: () => COOKIE_OPTIONS,
+  ChangeLogBaseSchema: () => ChangeLogBaseSchema,
+  ChangeLogDetailedSchema: () => ChangeLogDetailedSchema,
+  ChangeLogReferenceSchema: () => ChangeLogReferenceSchema,
+  ChargeBaseSchema: () => ChargeBaseSchema,
+  ChargeDetailedSchema: () => ChargeDetailedSchema,
+  ChargeReferenceSchema: () => ChargeReferenceSchema,
+  CountMetricsSchema: () => CountMetricsSchema,
+  CreateApiKeyInputSchema: () => CreateApiKeyInputSchema,
+  CreateOrganizationInputSchema: () => CreateOrganizationInputSchema,
+  EndUserBaseSchema: () => EndUserBaseSchema,
+  EndUserDetailedSchema: () => EndUserDetailedSchema,
+  EndUserReferenceSchema: () => EndUserReferenceSchema,
+  EventLogBaseSchema: () => EventLogBaseSchema,
+  EventLogDetailedSchema: () => EventLogDetailedSchema,
+  EventLogReferenceSchema: () => EventLogReferenceSchema,
+  FeatureEnum: () => FeatureEnum,
+  FeatureFlagBaseSchema: () => FeatureFlagBaseSchema,
+  FeatureFlagDetailedSchema: () => FeatureFlagDetailedSchema,
+  FeatureFlagReferenceSchema: () => FeatureFlagReferenceSchema,
+  ForecastBaseSchema: () => ForecastBaseSchema,
+  ForecastDetailedSchema: () => ForecastDetailedSchema,
+  ForecastReferenceSchema: () => ForecastReferenceSchema,
+  GlobalAllowedOriginDetailedSchema: () => GlobalAllowedOriginDetailedSchema,
+  GlobalAllowedOriginSchema: () => GlobalAllowedOriginSchema,
+  IntegrationBaseSchema: () => IntegrationBaseSchema,
+  IntegrationDetailedSchema: () => IntegrationDetailedSchema,
+  IntegrationReferenceSchema: () => IntegrationReferenceSchema,
+  InvoiceBaseSchema: () => InvoiceBaseSchema,
+  InvoiceDetailedSchema: () => InvoiceDetailedSchema,
+  InvoiceItemBaseSchema: () => InvoiceItemBaseSchema,
+  InvoiceItemDetailedSchema: () => InvoiceItemDetailedSchema,
+  InvoiceItemReferenceSchema: () => InvoiceItemReferenceSchema,
+  InvoiceReferenceSchema: () => InvoiceReferenceSchema,
+  JwtPayloadSchema: () => JwtPayloadSchema,
+  MFABaseSchema: () => MFABaseSchema,
+  MFADetailedSchema: () => MFADetailedSchema,
+  MFAReferenceSchema: () => MFAReferenceSchema,
+  ModelUsageBaseSchema: () => ModelUsageBaseSchema,
+  ModelUsageDetailedSchema: () => ModelUsageDetailedSchema,
+  ModelUsageInputSchema: () => ModelUsageInputSchema,
+  ModelUsageReferenceSchema: () => ModelUsageReferenceSchema,
+  MonthlyUsageSchema: () => MonthlyUsageSchema,
+  OpenMeterUsageEntrySchema: () => OpenMeterUsageEntrySchema,
+  OrgUsageSummaryItemSchema: () => OrgUsageSummaryItemSchema,
+  OrgUsageSummarySchema: () => OrgUsageSummarySchema,
+  OrganizationBaseSchema: () => OrganizationBaseSchema,
+  OrganizationDetailedSchema: () => OrganizationDetailedSchema,
+  OrganizationPlanBaseSchema: () => OrganizationPlanBaseSchema,
+  OrganizationPlanDetailedSchema: () => OrganizationPlanDetailedSchema,
+  OrganizationPlanReferenceSchema: () => OrganizationPlanReferenceSchema,
+  OrganizationReferenceSchema: () => OrganizationReferenceSchema,
+  PlanBaseSchema: () => PlanBaseSchema,
+  PlanDetailedSchema: () => PlanDetailedSchema,
+  PlanFeatureBaseSchema: () => PlanFeatureBaseSchema,
+  PlanFeatureDetailedSchema: () => PlanFeatureDetailedSchema,
+  PlanFeatureReferenceSchema: () => PlanFeatureReferenceSchema,
+  PlanReferenceSchema: () => PlanReferenceSchema,
+  RecordUsageInputSchema: () => RecordUsageInputSchema,
+  RemoveAllowedOriginInputSchema: () => RemoveAllowedOriginInputSchema,
+  RevenueSplitBaseSchema: () => RevenueSplitBaseSchema,
+  RevenueSplitDetailedSchema: () => RevenueSplitDetailedSchema,
+  RevenueSplitReferenceSchema: () => RevenueSplitReferenceSchema,
+  ReviewBaseSchema: () => ReviewBaseSchema,
+  ReviewDetailedSchema: () => ReviewDetailedSchema,
+  ReviewReferenceSchema: () => ReviewReferenceSchema,
+  ReviewStatusEnum: () => ReviewStatusEnum,
+  RoleBaseSchema: () => RoleBaseSchema,
+  RoleDetailedSchema: () => RoleDetailedSchema,
+  RoleReferenceSchema: () => RoleReferenceSchema,
+  SdkLogBaseSchema: () => SdkLogBaseSchema,
+  SdkLogDetailedSchema: () => SdkLogDetailedSchema,
+  SdkLogReferenceSchema: () => SdkLogReferenceSchema,
+  SessionMetricsSchema: () => SessionMetricsSchema,
+  UpdateOrganizationInputSchema: () => UpdateOrganizationInputSchema,
+  UsageByFeatureSchema: () => UsageByFeatureSchema,
+  UsageLimitBaseSchema: () => UsageLimitBaseSchema,
+  UsageLimitDetailedSchema: () => UsageLimitDetailedSchema,
+  UsageLimitReferenceSchema: () => UsageLimitReferenceSchema,
+  UsageLogBaseSchema: () => UsageLogBaseSchema,
+  UsageLogDetailedSchema: () => UsageLogDetailedSchema,
+  UsageLogReferenceSchema: () => UsageLogReferenceSchema,
+  UsageLogWithUserSchema: () => UsageLogWithUserSchema,
+  UsageLogsTableSchema: () => UsageLogsTableSchema,
+  UsagePayloadSchema: () => UsagePayloadSchema,
+  UsagePricingBaseSchema: () => UsagePricingBaseSchema,
+  UsagePricingDetailedSchema: () => UsagePricingDetailedSchema,
+  UsagePricingReferenceSchema: () => UsagePricingReferenceSchema,
+  UsageSummaryChartSchema: () => UsageSummaryChartSchema,
+  UsageSummaryItemSchema: () => UsageSummaryItemSchema,
+  UsageSummarySchema: () => UsageSummarySchema,
+  UsageThresholdAlertSchema: () => UsageThresholdAlertSchema,
+  UserBaseSchema: () => UserBaseSchema,
+  UserDetailedSchema: () => UserDetailedSchema,
+  UserLoginInputSchema: () => UserLoginInputSchema,
+  UserPreferencesBaseSchema: () => UserPreferencesBaseSchema,
+  UserPreferencesDetailedSchema: () => UserPreferencesDetailedSchema,
+  UserPreferencesReferenceSchema: () => UserPreferencesReferenceSchema,
+  UserReferenceSchema: () => UserReferenceSchema,
+  UserRegisterInputSchema: () => UserRegisterInputSchema,
+  UserSessionBaseSchema: () => UserSessionBaseSchema,
+  UserSessionDetailedSchema: () => UserSessionDetailedSchema,
+  UserSessionReferenceSchema: () => UserSessionReferenceSchema,
+  VerifiedTokenResultSchema: () => VerifiedTokenResultSchema,
+  decodeJwt: () => decodeJwt,
+  getAuthCookieName: () => getAuthCookieName,
+  signJwt: () => signJwt,
+  transformer: () => transformer,
+  verifyJwt: () => verifyJwt
+});
+module.exports = __toCommonJS(index_exports);
+
 // src/constants/apiKeys.ts
 var API_KEY_PREFIXES = {
   TEST: "billai_test_",
@@ -43,15 +214,15 @@ var AI_FEATURES = [
 ];
 
 // src/lib/jwt.ts
-import { jwtVerify, SignJWT } from "jose";
-import { z } from "zod";
-var JwtPayloadSchema = z.object({
-  userId: z.string().uuid(),
-  role: z.string().optional(),
-  organizationId: z.string().uuid().optional(),
-  iat: z.number().optional(),
+var import_jose = require("jose");
+var import_zod = require("zod");
+var JwtPayloadSchema = import_zod.z.object({
+  userId: import_zod.z.string().uuid(),
+  role: import_zod.z.string().optional(),
+  organizationId: import_zod.z.string().uuid().optional(),
+  iat: import_zod.z.number().optional(),
   // issued at
-  exp: z.number().optional()
+  exp: import_zod.z.number().optional()
   // expiration time
 });
 function getSecretKey() {
@@ -86,12 +257,12 @@ async function signJwt(payload) {
         return now + 3600;
     }
   })();
-  return await new SignJWT(payload).setProtectedHeader({ alg: "HS256" }).setIssuedAt(now).setExpirationTime(expSeconds).sign(secret);
+  return await new import_jose.SignJWT(payload).setProtectedHeader({ alg: "HS256" }).setIssuedAt(now).setExpirationTime(expSeconds).sign(secret);
 }
 async function verifyJwt(token) {
   const secret = getSecretKey();
   try {
-    const { payload } = await jwtVerify(token, secret);
+    const { payload } = await (0, import_jose.jwtVerify)(token, secret);
     return JwtPayloadSchema.parse(payload);
   } catch {
     return null;
@@ -170,41 +341,41 @@ function decodeJwt(token) {
 }
 
 // src/schemas/alert.schema.ts
-import { z as z23 } from "zod";
+var import_zod23 = require("zod");
 
 // src/schemas/app.schema.ts
-import { z as z22 } from "zod";
+var import_zod22 = require("zod");
 
 // src/schemas/organization.schema.ts
-import { z as z21 } from "zod";
+var import_zod21 = require("zod");
 
 // src/schemas/modelUsage.schema.ts
-import { z as z20 } from "zod";
+var import_zod20 = require("zod");
 
 // src/schemas/apiKey.schema.ts
-import { z as z19 } from "zod";
+var import_zod19 = require("zod");
 
 // src/schemas/usageLog.schema.ts
-import { z as z18 } from "zod";
+var import_zod18 = require("zod");
 
 // src/schemas/endUser.schema.ts
-import { z as z17 } from "zod";
+var import_zod17 = require("zod");
 
 // src/schemas/charge.schema.ts
-import { z as z16 } from "zod";
+var import_zod16 = require("zod");
 
 // src/schemas/invoice.schema.ts
-import { z as z15 } from "zod";
+var import_zod15 = require("zod");
 
 // src/schemas/invoiceItem.schema.ts
-import { z as z2 } from "zod";
-var InvoiceItemBaseSchema = z2.object({
-  id: z2.uuid(),
-  invoiceId: z2.uuid(),
-  description: z2.string(),
-  amount: z2.number(),
-  quantity: z2.number().default(1),
-  createdAt: z2.date()
+var import_zod2 = require("zod");
+var InvoiceItemBaseSchema = import_zod2.z.object({
+  id: import_zod2.z.uuid(),
+  invoiceId: import_zod2.z.uuid(),
+  description: import_zod2.z.string(),
+  amount: import_zod2.z.number(),
+  quantity: import_zod2.z.number().default(1),
+  createdAt: import_zod2.z.date()
 });
 var InvoiceItemReferenceSchema = InvoiceItemBaseSchema.pick({
   id: true,
@@ -213,38 +384,38 @@ var InvoiceItemReferenceSchema = InvoiceItemBaseSchema.pick({
   quantity: true
 });
 var InvoiceItemDetailedSchema = InvoiceItemBaseSchema.extend({
-  invoice: z2.lazy(() => InvoiceReferenceSchema).optional()
+  invoice: import_zod2.z.lazy(() => InvoiceReferenceSchema).optional()
 });
 
 // src/schemas/user.schema.ts
-import { z as z14 } from "zod";
+var import_zod14 = require("zod");
 
 // src/schemas/appApiKey.schema.ts
-import { z as z3 } from "zod";
-var AppApiKeyBaseSchema = z3.object({
-  appId: z3.string(),
-  key: z3.string(),
-  createdByUserId: z3.string().optional(),
-  expiresAt: z3.date().optional()
+var import_zod3 = require("zod");
+var AppApiKeyBaseSchema = import_zod3.z.object({
+  appId: import_zod3.z.string(),
+  key: import_zod3.z.string(),
+  createdByUserId: import_zod3.z.string().optional(),
+  expiresAt: import_zod3.z.date().optional()
 });
 var AppApiKeyReferenceSchema = AppApiKeyBaseSchema.extend({
-  id: z3.uuid(),
-  createdAt: z3.date()
+  id: import_zod3.z.uuid(),
+  createdAt: import_zod3.z.date()
 });
 var AppApiKeyDetailedSchema = AppApiKeyReferenceSchema.extend({
-  app: z3.lazy(() => AppReferenceSchema),
-  createdBy: z3.lazy(() => UserReferenceSchema).optional()
+  app: import_zod3.z.lazy(() => AppReferenceSchema),
+  createdBy: import_zod3.z.lazy(() => UserReferenceSchema).optional()
 });
 
 // src/schemas/auditLog.schema.ts
-import { z as z4 } from "zod";
-var AuditLogBaseSchema = z4.object({
-  id: z4.uuid(),
-  userId: z4.uuid(),
-  action: z4.string().min(1, "Action is required."),
-  details: z4.string().optional(),
-  createdAt: z4.date(),
-  appId: z4.uuid().optional()
+var import_zod4 = require("zod");
+var AuditLogBaseSchema = import_zod4.z.object({
+  id: import_zod4.z.uuid(),
+  userId: import_zod4.z.uuid(),
+  action: import_zod4.z.string().min(1, "Action is required."),
+  details: import_zod4.z.string().optional(),
+  createdAt: import_zod4.z.date(),
+  appId: import_zod4.z.uuid().optional()
 });
 var AuditLogReferenceSchema = AuditLogBaseSchema.pick({
   id: true,
@@ -252,20 +423,20 @@ var AuditLogReferenceSchema = AuditLogBaseSchema.pick({
   createdAt: true
 });
 var AuditLogDetailedSchema = AuditLogBaseSchema.extend({
-  user: z4.lazy(() => UserReferenceSchema),
-  app: z4.lazy(() => AppReferenceSchema).optional()
+  user: import_zod4.z.lazy(() => UserReferenceSchema),
+  app: import_zod4.z.lazy(() => AppReferenceSchema).optional()
 });
 
 // src/schemas/mfa.schema.ts
-import { z as z5 } from "zod";
-var MFABaseSchema = z5.object({
-  id: z5.uuid(),
-  userId: z5.uuid(),
-  type: z5.string(),
-  secret: z5.string(),
-  enabled: z5.boolean().default(false),
-  createdAt: z5.date(),
-  updatedAt: z5.date()
+var import_zod5 = require("zod");
+var MFABaseSchema = import_zod5.z.object({
+  id: import_zod5.z.uuid(),
+  userId: import_zod5.z.uuid(),
+  type: import_zod5.z.string(),
+  secret: import_zod5.z.string(),
+  enabled: import_zod5.z.boolean().default(false),
+  createdAt: import_zod5.z.date(),
+  updatedAt: import_zod5.z.date()
 });
 var MFAReferenceSchema = MFABaseSchema.pick({
   id: true,
@@ -273,22 +444,22 @@ var MFAReferenceSchema = MFABaseSchema.pick({
   enabled: true
 });
 var MFADetailedSchema = MFABaseSchema.extend({
-  user: z5.lazy(() => UserReferenceSchema).optional()
+  user: import_zod5.z.lazy(() => UserReferenceSchema).optional()
 });
 
 // src/schemas/plan.schema.ts
-import { z as z8 } from "zod";
+var import_zod8 = require("zod");
 
 // src/schemas/organizationPlan.schema.ts
-import { z as z6 } from "zod";
-var OrganizationPlanBaseSchema = z6.object({
-  id: z6.uuid(),
-  organizationId: z6.uuid().optional(),
-  planId: z6.uuid().optional(),
-  startDate: z6.date(),
-  endDate: z6.date().nullable().optional(),
-  createdAt: z6.date(),
-  updatedAt: z6.date()
+var import_zod6 = require("zod");
+var OrganizationPlanBaseSchema = import_zod6.z.object({
+  id: import_zod6.z.uuid(),
+  organizationId: import_zod6.z.uuid().optional(),
+  planId: import_zod6.z.uuid().optional(),
+  startDate: import_zod6.z.date(),
+  endDate: import_zod6.z.date().nullable().optional(),
+  createdAt: import_zod6.z.date(),
+  updatedAt: import_zod6.z.date()
 });
 var OrganizationPlanReferenceSchema = OrganizationPlanBaseSchema.pick({
   id: true,
@@ -299,40 +470,40 @@ var OrganizationPlanReferenceSchema = OrganizationPlanBaseSchema.pick({
 });
 var OrganizationPlanDetailedSchema = OrganizationPlanBaseSchema.extend(
   {
-    organization: z6.lazy(() => OrganizationReferenceSchema).optional(),
-    plan: z6.lazy(() => PlanReferenceSchema).optional()
+    organization: import_zod6.z.lazy(() => OrganizationReferenceSchema).optional(),
+    plan: import_zod6.z.lazy(() => PlanReferenceSchema).optional()
   }
 );
 
 // src/schemas/planFeature.schema.ts
-import { z as z7 } from "zod";
-var PlanFeatureBaseSchema = z7.object({
-  id: z7.uuid(),
-  planId: z7.uuid(),
-  name: z7.string(),
-  limit: z7.number().optional(),
-  price: z7.number().optional(),
-  metadata: z7.any().optional(),
-  createdAt: z7.date()
+var import_zod7 = require("zod");
+var PlanFeatureBaseSchema = import_zod7.z.object({
+  id: import_zod7.z.uuid(),
+  planId: import_zod7.z.uuid(),
+  name: import_zod7.z.string(),
+  limit: import_zod7.z.number().optional(),
+  price: import_zod7.z.number().optional(),
+  metadata: import_zod7.z.any().optional(),
+  createdAt: import_zod7.z.date()
 });
 var PlanFeatureReferenceSchema = PlanFeatureBaseSchema.pick({
   id: true,
   name: true
 });
 var PlanFeatureDetailedSchema = PlanFeatureBaseSchema.extend({
-  plan: z7.lazy(() => PlanReferenceSchema).optional()
+  plan: import_zod7.z.lazy(() => PlanReferenceSchema).optional()
 });
 
 // src/schemas/plan.schema.ts
-var PlanBaseSchema = z8.object({
-  id: z8.uuid(),
-  name: z8.string(),
-  price: z8.number(),
-  maxUsage: z8.number().optional(),
-  interval: z8.string().default("monthly"),
-  features: z8.string().optional(),
-  createdAt: z8.date(),
-  updatedAt: z8.date()
+var PlanBaseSchema = import_zod8.z.object({
+  id: import_zod8.z.uuid(),
+  name: import_zod8.z.string(),
+  price: import_zod8.z.number(),
+  maxUsage: import_zod8.z.number().optional(),
+  interval: import_zod8.z.string().default("monthly"),
+  features: import_zod8.z.string().optional(),
+  createdAt: import_zod8.z.date(),
+  updatedAt: import_zod8.z.date()
 });
 var PlanReferenceSchema = PlanBaseSchema.pick({
   id: true,
@@ -341,42 +512,42 @@ var PlanReferenceSchema = PlanBaseSchema.pick({
   maxUsage: true
 });
 var PlanDetailedSchema = PlanBaseSchema.extend({
-  users: z8.array(z8.lazy(() => UserReferenceSchema)).optional(),
-  organizationPlans: z8.array(z8.lazy(() => OrganizationPlanReferenceSchema)).optional(),
-  planFeatures: z8.array(z8.lazy(() => PlanFeatureReferenceSchema)).optional()
+  users: import_zod8.z.array(import_zod8.z.lazy(() => UserReferenceSchema)).optional(),
+  organizationPlans: import_zod8.z.array(import_zod8.z.lazy(() => OrganizationPlanReferenceSchema)).optional(),
+  planFeatures: import_zod8.z.array(import_zod8.z.lazy(() => PlanFeatureReferenceSchema)).optional()
 });
 
 // src/schemas/revenueSplit.schema.ts
-import { z as z9 } from "zod";
-var RevenueSplitBaseSchema = z9.object({
-  id: z9.uuid(),
-  appId: z9.uuid(),
-  recipientId: z9.uuid().optional(),
-  percent: z9.number(),
-  createdAt: z9.date(),
-  deletedAt: z9.date().optional()
+var import_zod9 = require("zod");
+var RevenueSplitBaseSchema = import_zod9.z.object({
+  id: import_zod9.z.uuid(),
+  appId: import_zod9.z.uuid(),
+  recipientId: import_zod9.z.uuid().optional(),
+  percent: import_zod9.z.number(),
+  createdAt: import_zod9.z.date(),
+  deletedAt: import_zod9.z.date().optional()
 });
 var RevenueSplitReferenceSchema = RevenueSplitBaseSchema.pick({
   id: true,
   percent: true
 });
 var RevenueSplitDetailedSchema = RevenueSplitBaseSchema.extend({
-  app: z9.lazy(() => AppReferenceSchema),
-  recipient: z9.lazy(() => UserReferenceSchema).optional()
+  app: import_zod9.z.lazy(() => AppReferenceSchema),
+  recipient: import_zod9.z.lazy(() => UserReferenceSchema).optional()
 });
 
 // src/schemas/review.schema.ts
-import { z as z10 } from "zod";
-var ReviewStatusEnum = z10.enum(["PENDING", "APPROVED", "REJECTED"]);
-var ReviewBaseSchema = z10.object({
-  id: z10.uuid(),
-  reviewerId: z10.uuid(),
-  resourceType: z10.string(),
-  resourceId: z10.string(),
+var import_zod10 = require("zod");
+var ReviewStatusEnum = import_zod10.z.enum(["PENDING", "APPROVED", "REJECTED"]);
+var ReviewBaseSchema = import_zod10.z.object({
+  id: import_zod10.z.uuid(),
+  reviewerId: import_zod10.z.uuid(),
+  resourceType: import_zod10.z.string(),
+  resourceId: import_zod10.z.string(),
   status: ReviewStatusEnum,
-  notes: z10.string().nullable().optional(),
-  createdAt: z10.date(),
-  updatedAt: z10.date()
+  notes: import_zod10.z.string().nullable().optional(),
+  createdAt: import_zod10.z.date(),
+  updatedAt: import_zod10.z.date()
 });
 var ReviewReferenceSchema = ReviewBaseSchema.pick({
   id: true,
@@ -385,39 +556,39 @@ var ReviewReferenceSchema = ReviewBaseSchema.pick({
   resourceId: true
 });
 var ReviewDetailedSchema = ReviewBaseSchema.extend({
-  reviewer: z10.lazy(() => UserReferenceSchema)
+  reviewer: import_zod10.z.lazy(() => UserReferenceSchema)
 });
 
 // src/schemas/role.schema.ts
-import { z as z11 } from "zod";
-var RoleBaseSchema = z11.object({
-  id: z11.uuid(),
-  name: z11.string(),
-  description: z11.string().optional(),
-  permissions: z11.string().optional(),
-  createdBy: z11.string().optional(),
-  updatedBy: z11.string().optional()
+var import_zod11 = require("zod");
+var RoleBaseSchema = import_zod11.z.object({
+  id: import_zod11.z.uuid(),
+  name: import_zod11.z.string(),
+  description: import_zod11.z.string().optional(),
+  permissions: import_zod11.z.string().optional(),
+  createdBy: import_zod11.z.string().optional(),
+  updatedBy: import_zod11.z.string().optional()
 });
 var RoleReferenceSchema = RoleBaseSchema.pick({
   id: true,
   name: true
 });
 var RoleDetailedSchema = RoleBaseSchema.extend({
-  users: z11.array(z11.lazy(() => UserReferenceSchema)).optional()
+  users: import_zod11.z.array(import_zod11.z.lazy(() => UserReferenceSchema)).optional()
 });
 
 // src/schemas/userPreferences.schema.ts
-import { z as z12 } from "zod";
-var UserPreferencesBaseSchema = z12.object({
-  id: z12.uuid(),
-  userId: z12.uuid(),
-  timezone: z12.string().optional(),
-  locale: z12.string().optional(),
-  language: z12.string().optional(),
-  emailNotifications: z12.boolean().default(true),
-  darkMode: z12.boolean().default(false),
-  createdAt: z12.date(),
-  updatedAt: z12.date()
+var import_zod12 = require("zod");
+var UserPreferencesBaseSchema = import_zod12.z.object({
+  id: import_zod12.z.uuid(),
+  userId: import_zod12.z.uuid(),
+  timezone: import_zod12.z.string().optional(),
+  locale: import_zod12.z.string().optional(),
+  language: import_zod12.z.string().optional(),
+  emailNotifications: import_zod12.z.boolean().default(true),
+  darkMode: import_zod12.z.boolean().default(false),
+  createdAt: import_zod12.z.date(),
+  updatedAt: import_zod12.z.date()
 });
 var UserPreferencesReferenceSchema = UserPreferencesBaseSchema.pick({
   id: true,
@@ -426,19 +597,19 @@ var UserPreferencesReferenceSchema = UserPreferencesBaseSchema.pick({
   darkMode: true
 });
 var UserPreferencesDetailedSchema = UserPreferencesBaseSchema.extend({
-  user: z12.lazy(() => UserReferenceSchema).optional()
+  user: import_zod12.z.lazy(() => UserReferenceSchema).optional()
 });
 
 // src/schemas/userSession.schema.ts
-import { z as z13 } from "zod";
-var UserSessionBaseSchema = z13.object({
-  id: z13.uuid(),
-  userId: z13.uuid(),
-  expiresAt: z13.date(),
-  ipAddress: z13.string().optional(),
-  userAgent: z13.string().optional(),
-  createdAt: z13.date(),
-  updatedAt: z13.date()
+var import_zod13 = require("zod");
+var UserSessionBaseSchema = import_zod13.z.object({
+  id: import_zod13.z.uuid(),
+  userId: import_zod13.z.uuid(),
+  expiresAt: import_zod13.z.date(),
+  ipAddress: import_zod13.z.string().optional(),
+  userAgent: import_zod13.z.string().optional(),
+  createdAt: import_zod13.z.date(),
+  updatedAt: import_zod13.z.date()
 });
 var UserSessionReferenceSchema = UserSessionBaseSchema.pick({
   id: true,
@@ -447,33 +618,33 @@ var UserSessionReferenceSchema = UserSessionBaseSchema.pick({
   createdAt: true
 });
 var UserSessionDetailedSchema = UserSessionBaseSchema.extend({
-  user: z13.lazy(() => UserReferenceSchema).optional(),
-  usageLogs: z13.array(z13.lazy(() => UsageLogReferenceSchema)).optional()
+  user: import_zod13.z.lazy(() => UserReferenceSchema).optional(),
+  usageLogs: import_zod13.z.array(import_zod13.z.lazy(() => UsageLogReferenceSchema)).optional()
 });
 
 // src/schemas/user.schema.ts
-var UserBaseSchema = z14.object({
-  id: z14.uuid(),
-  email: z14.email(),
-  password: z14.string().optional().nullable(),
-  fullName: z14.string().optional().nullable(),
-  phone: z14.string().optional().nullable(),
-  bio: z14.string().optional().nullable(),
-  title: z14.string().optional().nullable(),
-  authId: z14.string(),
-  provider: z14.string(),
-  isActive: z14.boolean().default(true),
-  isVerified: z14.boolean().default(false),
-  avatarUrl: z14.string().optional().nullable(),
-  locale: z14.string().optional().nullable(),
-  timezone: z14.string().optional().nullable(),
-  language: z14.string().optional().nullable(),
-  roleId: z14.uuid().nullable().optional(),
-  organizationId: z14.uuid().nullable().optional(),
-  planId: z14.uuid().nullable().optional(),
-  createdAt: z14.date(),
-  updatedAt: z14.date(),
-  deletedAt: z14.date().optional().nullable()
+var UserBaseSchema = import_zod14.z.object({
+  id: import_zod14.z.uuid(),
+  email: import_zod14.z.email(),
+  password: import_zod14.z.string().optional().nullable(),
+  fullName: import_zod14.z.string().optional().nullable(),
+  phone: import_zod14.z.string().optional().nullable(),
+  bio: import_zod14.z.string().optional().nullable(),
+  title: import_zod14.z.string().optional().nullable(),
+  authId: import_zod14.z.string(),
+  provider: import_zod14.z.string(),
+  isActive: import_zod14.z.boolean().default(true),
+  isVerified: import_zod14.z.boolean().default(false),
+  avatarUrl: import_zod14.z.string().optional().nullable(),
+  locale: import_zod14.z.string().optional().nullable(),
+  timezone: import_zod14.z.string().optional().nullable(),
+  language: import_zod14.z.string().optional().nullable(),
+  roleId: import_zod14.z.uuid().nullable().optional(),
+  organizationId: import_zod14.z.uuid().nullable().optional(),
+  planId: import_zod14.z.uuid().nullable().optional(),
+  createdAt: import_zod14.z.date(),
+  updatedAt: import_zod14.z.date(),
+  deletedAt: import_zod14.z.date().optional().nullable()
 });
 var UserReferenceSchema = UserBaseSchema.pick({
   id: true,
@@ -484,39 +655,39 @@ var UserReferenceSchema = UserBaseSchema.pick({
 });
 var UserDetailedSchema = UserBaseSchema.extend({
   // ─────────── Relations ───────────
-  role: z14.lazy(() => RoleReferenceSchema).optional().nullable(),
-  organization: z14.lazy(() => OrganizationReferenceSchema).optional().nullable(),
-  plan: z14.lazy(() => PlanReferenceSchema).optional().nullable(),
+  role: import_zod14.z.lazy(() => RoleReferenceSchema).optional().nullable(),
+  organization: import_zod14.z.lazy(() => OrganizationReferenceSchema).optional().nullable(),
+  plan: import_zod14.z.lazy(() => PlanReferenceSchema).optional().nullable(),
   // ─────────── Nested Collections ───────────
-  sessions: z14.array(z14.lazy(() => UserSessionReferenceSchema)).optional(),
-  invoices: z14.array(z14.lazy(() => InvoiceReferenceSchema)).optional(),
-  apiKeys: z14.array(z14.lazy(() => ApiKeyReferenceSchema)).optional(),
-  auditLogs: z14.array(z14.lazy(() => AuditLogReferenceSchema)).optional(),
-  preferences: z14.lazy(() => UserPreferencesReferenceSchema).optional().nullable(),
-  mfaSettings: z14.array(z14.lazy(() => MFAReferenceSchema)).optional(),
-  reviews: z14.array(z14.lazy(() => ReviewReferenceSchema)).optional(),
-  modelUsages: z14.array(z14.lazy(() => ModelUsageReferenceSchema)).optional(),
-  revenueSplits: z14.array(z14.lazy(() => RevenueSplitReferenceSchema)).optional(),
-  apps: z14.array(z14.lazy(() => AppReferenceSchema)).optional(),
-  alerts: z14.array(z14.lazy(() => AlertReferenceSchema)).optional(),
-  appApiKeys: z14.array(z14.lazy(() => AppApiKeyReferenceSchema)).optional(),
-  usageLogs: z14.array(z14.lazy(() => UsageLogReferenceSchema)).optional()
+  sessions: import_zod14.z.array(import_zod14.z.lazy(() => UserSessionReferenceSchema)).optional(),
+  invoices: import_zod14.z.array(import_zod14.z.lazy(() => InvoiceReferenceSchema)).optional(),
+  apiKeys: import_zod14.z.array(import_zod14.z.lazy(() => ApiKeyReferenceSchema)).optional(),
+  auditLogs: import_zod14.z.array(import_zod14.z.lazy(() => AuditLogReferenceSchema)).optional(),
+  preferences: import_zod14.z.lazy(() => UserPreferencesReferenceSchema).optional().nullable(),
+  mfaSettings: import_zod14.z.array(import_zod14.z.lazy(() => MFAReferenceSchema)).optional(),
+  reviews: import_zod14.z.array(import_zod14.z.lazy(() => ReviewReferenceSchema)).optional(),
+  modelUsages: import_zod14.z.array(import_zod14.z.lazy(() => ModelUsageReferenceSchema)).optional(),
+  revenueSplits: import_zod14.z.array(import_zod14.z.lazy(() => RevenueSplitReferenceSchema)).optional(),
+  apps: import_zod14.z.array(import_zod14.z.lazy(() => AppReferenceSchema)).optional(),
+  alerts: import_zod14.z.array(import_zod14.z.lazy(() => AlertReferenceSchema)).optional(),
+  appApiKeys: import_zod14.z.array(import_zod14.z.lazy(() => AppApiKeyReferenceSchema)).optional(),
+  usageLogs: import_zod14.z.array(import_zod14.z.lazy(() => UsageLogReferenceSchema)).optional()
 });
 
 // src/schemas/invoice.schema.ts
-var InvoiceBaseSchema = z15.object({
-  id: z15.uuid(),
-  userId: z15.uuid(),
-  appId: z15.uuid().optional(),
-  endUserId: z15.uuid().optional(),
-  amount: z15.number(),
-  currency: z15.string(),
-  paid: z15.boolean(),
-  createdAt: z15.date(),
-  updatedAt: z15.date(),
-  dueDate: z15.date().optional(),
-  paidAt: z15.date().optional(),
-  deletedAt: z15.date().optional()
+var InvoiceBaseSchema = import_zod15.z.object({
+  id: import_zod15.z.uuid(),
+  userId: import_zod15.z.uuid(),
+  appId: import_zod15.z.uuid().optional(),
+  endUserId: import_zod15.z.uuid().optional(),
+  amount: import_zod15.z.number(),
+  currency: import_zod15.z.string(),
+  paid: import_zod15.z.boolean(),
+  createdAt: import_zod15.z.date(),
+  updatedAt: import_zod15.z.date(),
+  dueDate: import_zod15.z.date().optional(),
+  paidAt: import_zod15.z.date().optional(),
+  deletedAt: import_zod15.z.date().optional()
 });
 var InvoiceReferenceSchema = InvoiceBaseSchema.pick({
   id: true,
@@ -526,24 +697,24 @@ var InvoiceReferenceSchema = InvoiceBaseSchema.pick({
   createdAt: true
 });
 var InvoiceDetailedSchema = InvoiceBaseSchema.extend({
-  user: z15.lazy(() => UserReferenceSchema).optional(),
-  app: z15.lazy(() => AppReferenceSchema).optional(),
-  endUser: z15.lazy(() => EndUserReferenceSchema).optional(),
-  items: z15.array(z15.lazy(() => InvoiceItemReferenceSchema)).optional(),
-  charges: z15.array(z15.lazy(() => ChargeReferenceSchema)).optional()
+  user: import_zod15.z.lazy(() => UserReferenceSchema).optional(),
+  app: import_zod15.z.lazy(() => AppReferenceSchema).optional(),
+  endUser: import_zod15.z.lazy(() => EndUserReferenceSchema).optional(),
+  items: import_zod15.z.array(import_zod15.z.lazy(() => InvoiceItemReferenceSchema)).optional(),
+  charges: import_zod15.z.array(import_zod15.z.lazy(() => ChargeReferenceSchema)).optional()
 });
 
 // src/schemas/charge.schema.ts
-var ChargeBaseSchema = z16.object({
-  id: z16.uuid(),
-  invoiceId: z16.uuid().optional(),
-  endUserId: z16.uuid().optional(),
-  appId: z16.uuid(),
-  amount: z16.number().nonnegative(),
-  status: z16.enum(["PENDING", "PAID", "FAILED", "REFUNDED"]),
-  createdAt: z16.date(),
-  paidAt: z16.date().optional(),
-  deletedAt: z16.date().optional()
+var ChargeBaseSchema = import_zod16.z.object({
+  id: import_zod16.z.uuid(),
+  invoiceId: import_zod16.z.uuid().optional(),
+  endUserId: import_zod16.z.uuid().optional(),
+  appId: import_zod16.z.uuid(),
+  amount: import_zod16.z.number().nonnegative(),
+  status: import_zod16.z.enum(["PENDING", "PAID", "FAILED", "REFUNDED"]),
+  createdAt: import_zod16.z.date(),
+  paidAt: import_zod16.z.date().optional(),
+  deletedAt: import_zod16.z.date().optional()
 });
 var ChargeReferenceSchema = ChargeBaseSchema.pick({
   id: true,
@@ -553,20 +724,20 @@ var ChargeReferenceSchema = ChargeBaseSchema.pick({
   createdAt: true
 });
 var ChargeDetailedSchema = ChargeBaseSchema.extend({
-  invoice: z16.lazy(() => InvoiceReferenceSchema).optional(),
-  endUser: z16.lazy(() => EndUserReferenceSchema).optional(),
-  app: z16.lazy(() => AppReferenceSchema)
+  invoice: import_zod16.z.lazy(() => InvoiceReferenceSchema).optional(),
+  endUser: import_zod16.z.lazy(() => EndUserReferenceSchema).optional(),
+  app: import_zod16.z.lazy(() => AppReferenceSchema)
 });
 
 // src/schemas/endUser.schema.ts
-var EndUserBaseSchema = z17.object({
-  id: z17.uuid(),
-  appId: z17.uuid(),
-  externalId: z17.string(),
-  email: z17.email().optional(),
-  createdAt: z17.date(),
-  updatedAt: z17.date(),
-  deletedAt: z17.date().optional()
+var EndUserBaseSchema = import_zod17.z.object({
+  id: import_zod17.z.uuid(),
+  appId: import_zod17.z.uuid(),
+  externalId: import_zod17.z.string(),
+  email: import_zod17.z.email().optional(),
+  createdAt: import_zod17.z.date(),
+  updatedAt: import_zod17.z.date(),
+  deletedAt: import_zod17.z.date().optional()
 });
 var EndUserReferenceSchema = EndUserBaseSchema.pick({
   id: true,
@@ -575,38 +746,38 @@ var EndUserReferenceSchema = EndUserBaseSchema.pick({
   email: true
 });
 var EndUserDetailedSchema = EndUserBaseSchema.extend({
-  app: z17.lazy(() => AppReferenceSchema).optional(),
-  invoices: z17.array(z17.lazy(() => InvoiceReferenceSchema)).optional(),
-  charges: z17.array(z17.lazy(() => ChargeReferenceSchema)).optional(),
-  usageLogs: z17.array(z17.any()).optional(),
+  app: import_zod17.z.lazy(() => AppReferenceSchema).optional(),
+  invoices: import_zod17.z.array(import_zod17.z.lazy(() => InvoiceReferenceSchema)).optional(),
+  charges: import_zod17.z.array(import_zod17.z.lazy(() => ChargeReferenceSchema)).optional(),
+  usageLogs: import_zod17.z.array(import_zod17.z.any()).optional(),
   // replace with UsageLogReferenceSchema when available
-  eventLogs: z17.array(z17.any()).optional(),
+  eventLogs: import_zod17.z.array(import_zod17.z.any()).optional(),
   // replace with EventLogReferenceSchema
-  usageLimits: z17.array(z17.any()).optional(),
+  usageLimits: import_zod17.z.array(import_zod17.z.any()).optional(),
   // replace with UsageLimitReferenceSchema
-  sdkLogs: z17.array(z17.any()).optional()
+  sdkLogs: import_zod17.z.array(import_zod17.z.any()).optional()
   // replace with SdkLogReferenceSchema
 });
 
 // src/schemas/usageLog.schema.ts
-var FeatureEnum = z18.enum(AI_FEATURES);
-var UsageLogBaseSchema = z18.object({
-  id: z18.uuid(),
-  userId: z18.string().nullable().optional(),
-  organizationId: z18.string().nullable().optional(),
-  appId: z18.string().nullable().optional(),
-  endUserId: z18.string().nullable().optional(),
-  apiKeyId: z18.string().nullable().optional(),
+var FeatureEnum = import_zod18.z.enum(AI_FEATURES);
+var UsageLogBaseSchema = import_zod18.z.object({
+  id: import_zod18.z.uuid(),
+  userId: import_zod18.z.string().nullable().optional(),
+  organizationId: import_zod18.z.string().nullable().optional(),
+  appId: import_zod18.z.string().nullable().optional(),
+  endUserId: import_zod18.z.string().nullable().optional(),
+  apiKeyId: import_zod18.z.string().nullable().optional(),
   feature: FeatureEnum.default("OTHER"),
-  usage: z18.number(),
-  unitCost: z18.number().nullable().optional(),
-  billed: z18.boolean().default(false),
-  sessionId: z18.string().nullable().optional(),
-  createdAt: z18.date(),
-  openMeterReported: z18.boolean().nullable().optional(),
-  openMeterId: z18.string().nullable().optional(),
-  deletedAt: z18.date().nullable().optional(),
-  metadata: z18.record(z18.string(), z18.any()).optional()
+  usage: import_zod18.z.number(),
+  unitCost: import_zod18.z.number().nullable().optional(),
+  billed: import_zod18.z.boolean().default(false),
+  sessionId: import_zod18.z.string().nullable().optional(),
+  createdAt: import_zod18.z.date(),
+  openMeterReported: import_zod18.z.boolean().nullable().optional(),
+  openMeterId: import_zod18.z.string().nullable().optional(),
+  deletedAt: import_zod18.z.date().nullable().optional(),
+  metadata: import_zod18.z.record(import_zod18.z.string(), import_zod18.z.any()).optional()
 });
 var UsageLogReferenceSchema = UsageLogBaseSchema.pick({
   id: true,
@@ -619,12 +790,12 @@ var UsageLogReferenceSchema = UsageLogBaseSchema.pick({
   organizationId: true
 });
 var UsageLogDetailedSchema = UsageLogBaseSchema.extend({
-  user: z18.lazy(() => UserReferenceSchema).nullable().optional(),
-  organization: z18.lazy(() => OrganizationReferenceSchema).nullable().optional(),
-  apiKey: z18.lazy(() => ApiKeyReferenceSchema).nullable().optional(),
-  app: z18.lazy(() => AppReferenceSchema).nullable().optional(),
-  endUser: z18.lazy(() => EndUserReferenceSchema).nullable().optional(),
-  session: z18.lazy(() => UserSessionReferenceSchema).nullable().optional()
+  user: import_zod18.z.lazy(() => UserReferenceSchema).nullable().optional(),
+  organization: import_zod18.z.lazy(() => OrganizationReferenceSchema).nullable().optional(),
+  apiKey: import_zod18.z.lazy(() => ApiKeyReferenceSchema).nullable().optional(),
+  app: import_zod18.z.lazy(() => AppReferenceSchema).nullable().optional(),
+  endUser: import_zod18.z.lazy(() => EndUserReferenceSchema).nullable().optional(),
+  session: import_zod18.z.lazy(() => UserSessionReferenceSchema).nullable().optional()
 });
 
 // src/schemas/apiKey.schema.ts
@@ -632,16 +803,16 @@ var API_KEY_ENVIRONMENTS = {
   LIVE: "live",
   TEST: "test"
 };
-var ApiKeyBaseSchema = z19.object({
-  id: z19.uuid(),
-  userId: z19.uuid().nullable().optional(),
-  keyPrefix: z19.string(),
-  hashedKey: z19.string(),
-  name: z19.string().nullable().optional(),
-  environment: z19.string().default("live"),
-  revoked: z19.boolean().default(false),
-  createdAt: z19.date(),
-  updatedAt: z19.date()
+var ApiKeyBaseSchema = import_zod19.z.object({
+  id: import_zod19.z.uuid(),
+  userId: import_zod19.z.uuid().nullable().optional(),
+  keyPrefix: import_zod19.z.string(),
+  hashedKey: import_zod19.z.string(),
+  name: import_zod19.z.string().nullable().optional(),
+  environment: import_zod19.z.string().default("live"),
+  revoked: import_zod19.z.boolean().default(false),
+  createdAt: import_zod19.z.date(),
+  updatedAt: import_zod19.z.date()
 });
 var ApiKeyReferenceSchema = ApiKeyBaseSchema.pick({
   id: true,
@@ -655,81 +826,81 @@ var ApiKeyReferenceSchema = ApiKeyBaseSchema.pick({
   updatedAt: true
 });
 var ApiKeyDetailedSchema = ApiKeyBaseSchema.extend({
-  scopes: z19.string().nullable().optional(),
-  expiresAt: z19.date().nullable().optional(),
-  lastUsedAt: z19.date().nullable().optional(),
-  user: z19.lazy(() => UserReferenceSchema).optional().nullable(),
-  usageLogs: z19.array(z19.lazy(() => UsageLogReferenceSchema)).optional(),
-  modelUsages: z19.array(z19.lazy(() => ModelUsageReferenceSchema)).optional()
+  scopes: import_zod19.z.string().nullable().optional(),
+  expiresAt: import_zod19.z.date().nullable().optional(),
+  lastUsedAt: import_zod19.z.date().nullable().optional(),
+  user: import_zod19.z.lazy(() => UserReferenceSchema).optional().nullable(),
+  usageLogs: import_zod19.z.array(import_zod19.z.lazy(() => UsageLogReferenceSchema)).optional(),
+  modelUsages: import_zod19.z.array(import_zod19.z.lazy(() => ModelUsageReferenceSchema)).optional()
 });
-var CreateApiKeyInputSchema = z19.object({
-  userId: z19.uuid(),
-  name: z19.string().optional(),
-  scopes: z19.array(z19.string()).optional(),
-  environment: z19.enum(["test", "live"]).default("live")
+var CreateApiKeyInputSchema = import_zod19.z.object({
+  userId: import_zod19.z.uuid(),
+  name: import_zod19.z.string().optional(),
+  scopes: import_zod19.z.array(import_zod19.z.string()).optional(),
+  environment: import_zod19.z.enum(["test", "live"]).default("live")
 });
 
 // src/schemas/modelUsage.schema.ts
-var SessionMetricsSchema = z20.object({
-  count: z20.number().nonnegative().default(0),
-  avgLatencyMs: z20.number().nonnegative().default(0),
-  p50LatencyMs: z20.number().nonnegative().default(0),
-  p90LatencyMs: z20.number().nonnegative().default(0),
-  p99LatencyMs: z20.number().nonnegative().default(0)
+var SessionMetricsSchema = import_zod20.z.object({
+  count: import_zod20.z.number().nonnegative().default(0),
+  avgLatencyMs: import_zod20.z.number().nonnegative().default(0),
+  p50LatencyMs: import_zod20.z.number().nonnegative().default(0),
+  p90LatencyMs: import_zod20.z.number().nonnegative().default(0),
+  p99LatencyMs: import_zod20.z.number().nonnegative().default(0)
 });
-var CountMetricsSchema = z20.object({
-  successCount: z20.number().int().nonnegative().default(0),
-  failureCount: z20.number().int().nonnegative().default(0)
+var CountMetricsSchema = import_zod20.z.object({
+  successCount: import_zod20.z.number().int().nonnegative().default(0),
+  failureCount: import_zod20.z.number().int().nonnegative().default(0)
 });
-var ModelUsageBaseSchema = z20.object({
-  id: z20.uuid(),
-  userId: z20.uuid().optional(),
-  organizationId: z20.uuid().optional(),
-  apiKeyId: z20.uuid().optional(),
-  appId: z20.uuid().optional(),
-  model: z20.string(),
-  vendor: z20.string(),
-  modelVersion: z20.string().optional(),
-  requestType: z20.string(),
-  usageCount: z20.number().default(1),
-  success: z20.boolean().default(true),
-  successCount: z20.number().default(0),
-  failureCount: z20.number().default(0),
-  avgLatencyMs: z20.number().optional(),
-  p50LatencyMs: z20.number().optional(),
-  p90LatencyMs: z20.number().optional(),
-  p99LatencyMs: z20.number().optional(),
-  latencyMs: z20.number().optional(),
-  throughput: z20.number().optional(),
-  queueTimeMs: z20.number().optional(),
-  errorType: z20.string().optional(),
-  retryCount: z20.number().optional(),
-  region: z20.string().optional(),
-  promptLengthTokens: z20.number().optional(),
-  responseLengthTokens: z20.number().optional(),
-  unitCost: z20.number().optional(),
-  totalCost: z20.number().optional(),
-  billed: z20.boolean().default(false),
-  discountApplied: z20.number().optional(),
-  planTier: z20.string().optional(),
-  temperature: z20.number().optional(),
-  maxTokens: z20.number().optional(),
-  totalTokens: z20.number().optional(),
-  topP: z20.number().optional(),
-  stopSequences: z20.array(z20.string()).optional(),
-  embeddingDimension: z20.number().optional(),
-  imageResolution: z20.string().optional(),
-  sdkVersion: z20.string().optional(),
-  userAgent: z20.string().optional(),
-  language: z20.string().optional(),
-  sessionId: z20.string().optional(),
-  promptCategory: z20.string().optional(),
-  responseQualityScore: z20.number().optional(),
-  resourceConsumption: z20.number().optional(),
-  concurrentRequests: z20.number().optional(),
-  createdAt: z20.date(),
-  updatedAt: z20.date(),
-  deletedAt: z20.date().nullable().optional()
+var ModelUsageBaseSchema = import_zod20.z.object({
+  id: import_zod20.z.uuid(),
+  userId: import_zod20.z.uuid().optional(),
+  organizationId: import_zod20.z.uuid().optional(),
+  apiKeyId: import_zod20.z.uuid().optional(),
+  appId: import_zod20.z.uuid().optional(),
+  model: import_zod20.z.string(),
+  vendor: import_zod20.z.string(),
+  modelVersion: import_zod20.z.string().optional(),
+  requestType: import_zod20.z.string(),
+  usageCount: import_zod20.z.number().default(1),
+  success: import_zod20.z.boolean().default(true),
+  successCount: import_zod20.z.number().default(0),
+  failureCount: import_zod20.z.number().default(0),
+  avgLatencyMs: import_zod20.z.number().optional(),
+  p50LatencyMs: import_zod20.z.number().optional(),
+  p90LatencyMs: import_zod20.z.number().optional(),
+  p99LatencyMs: import_zod20.z.number().optional(),
+  latencyMs: import_zod20.z.number().optional(),
+  throughput: import_zod20.z.number().optional(),
+  queueTimeMs: import_zod20.z.number().optional(),
+  errorType: import_zod20.z.string().optional(),
+  retryCount: import_zod20.z.number().optional(),
+  region: import_zod20.z.string().optional(),
+  promptLengthTokens: import_zod20.z.number().optional(),
+  responseLengthTokens: import_zod20.z.number().optional(),
+  unitCost: import_zod20.z.number().optional(),
+  totalCost: import_zod20.z.number().optional(),
+  billed: import_zod20.z.boolean().default(false),
+  discountApplied: import_zod20.z.number().optional(),
+  planTier: import_zod20.z.string().optional(),
+  temperature: import_zod20.z.number().optional(),
+  maxTokens: import_zod20.z.number().optional(),
+  totalTokens: import_zod20.z.number().optional(),
+  topP: import_zod20.z.number().optional(),
+  stopSequences: import_zod20.z.array(import_zod20.z.string()).optional(),
+  embeddingDimension: import_zod20.z.number().optional(),
+  imageResolution: import_zod20.z.string().optional(),
+  sdkVersion: import_zod20.z.string().optional(),
+  userAgent: import_zod20.z.string().optional(),
+  language: import_zod20.z.string().optional(),
+  sessionId: import_zod20.z.string().optional(),
+  promptCategory: import_zod20.z.string().optional(),
+  responseQualityScore: import_zod20.z.number().optional(),
+  resourceConsumption: import_zod20.z.number().optional(),
+  concurrentRequests: import_zod20.z.number().optional(),
+  createdAt: import_zod20.z.date(),
+  updatedAt: import_zod20.z.date(),
+  deletedAt: import_zod20.z.date().nullable().optional()
 });
 var ModelUsageInputSchema = ModelUsageBaseSchema.omit({
   id: true,
@@ -746,19 +917,19 @@ var ModelUsageReferenceSchema = ModelUsageBaseSchema.pick({
   updatedAt: true
 });
 var ModelUsageDetailedSchema = ModelUsageBaseSchema.extend({
-  user: z20.lazy(() => UserReferenceSchema).optional(),
-  organization: z20.lazy(() => OrganizationReferenceSchema).optional(),
-  apiKey: z20.lazy(() => ApiKeyReferenceSchema).optional(),
-  app: z20.lazy(() => AppReferenceSchema).optional()
+  user: import_zod20.z.lazy(() => UserReferenceSchema).optional(),
+  organization: import_zod20.z.lazy(() => OrganizationReferenceSchema).optional(),
+  apiKey: import_zod20.z.lazy(() => ApiKeyReferenceSchema).optional(),
+  app: import_zod20.z.lazy(() => AppReferenceSchema).optional()
 });
 
 // src/schemas/organization.schema.ts
-var OrganizationBaseSchema = z21.object({
-  id: z21.uuid(),
-  name: z21.string(),
-  domain: z21.string().nullable().optional(),
-  createdAt: z21.date(),
-  updatedAt: z21.date()
+var OrganizationBaseSchema = import_zod21.z.object({
+  id: import_zod21.z.uuid(),
+  name: import_zod21.z.string(),
+  domain: import_zod21.z.string().nullable().optional(),
+  createdAt: import_zod21.z.date(),
+  updatedAt: import_zod21.z.date()
 });
 var OrganizationReferenceSchema = OrganizationBaseSchema.pick({
   id: true,
@@ -766,49 +937,49 @@ var OrganizationReferenceSchema = OrganizationBaseSchema.pick({
   domain: true
 });
 var OrganizationDetailedSchema = OrganizationBaseSchema.extend({
-  users: z21.array(z21.lazy(() => UserReferenceSchema)).optional(),
-  apps: z21.array(z21.lazy(() => AppReferenceSchema)).optional(),
-  modelUsages: z21.array(z21.lazy(() => ModelUsageReferenceSchema)).optional()
+  users: import_zod21.z.array(import_zod21.z.lazy(() => UserReferenceSchema)).optional(),
+  apps: import_zod21.z.array(import_zod21.z.lazy(() => AppReferenceSchema)).optional(),
+  modelUsages: import_zod21.z.array(import_zod21.z.lazy(() => ModelUsageReferenceSchema)).optional()
 });
-var CreateOrganizationInputSchema = z21.object({
-  name: z21.string().min(1),
-  domain: z21.string().optional()
+var CreateOrganizationInputSchema = import_zod21.z.object({
+  name: import_zod21.z.string().min(1),
+  domain: import_zod21.z.string().optional()
 });
-var UpdateOrganizationInputSchema = z21.object({
-  name: z21.string().min(1).optional(),
-  domain: z21.string().optional()
+var UpdateOrganizationInputSchema = import_zod21.z.object({
+  name: import_zod21.z.string().min(1).optional(),
+  domain: import_zod21.z.string().optional()
 });
 
 // src/schemas/app.schema.ts
-var AppBaseSchema = z22.object({
-  id: z22.uuid(),
-  name: z22.string(),
-  description: z22.string().optional(),
-  ownerId: z22.string().optional(),
-  organizationId: z22.string().optional(),
-  createdAt: z22.date(),
-  updatedAt: z22.date(),
-  deletedAt: z22.date().optional(),
-  isActive: z22.boolean().default(true)
+var AppBaseSchema = import_zod22.z.object({
+  id: import_zod22.z.uuid(),
+  name: import_zod22.z.string(),
+  description: import_zod22.z.string().optional(),
+  ownerId: import_zod22.z.string().optional(),
+  organizationId: import_zod22.z.string().optional(),
+  createdAt: import_zod22.z.date(),
+  updatedAt: import_zod22.z.date(),
+  deletedAt: import_zod22.z.date().optional(),
+  isActive: import_zod22.z.boolean().default(true)
 });
 var AppReferenceSchema = AppBaseSchema.extend({
-  owner: z22.lazy(() => UserReferenceSchema).optional(),
-  organization: z22.lazy(() => OrganizationReferenceSchema).optional()
+  owner: import_zod22.z.lazy(() => UserReferenceSchema).optional(),
+  organization: import_zod22.z.lazy(() => OrganizationReferenceSchema).optional()
 });
 var AppDetailedSchema = AppBaseSchema.extend({
-  owner: z22.lazy(() => UserDetailedSchema).optional(),
-  organization: z22.lazy(() => OrganizationDetailedSchema).optional()
+  owner: import_zod22.z.lazy(() => UserDetailedSchema).optional(),
+  organization: import_zod22.z.lazy(() => OrganizationDetailedSchema).optional()
 });
 
 // src/schemas/alert.schema.ts
-var AlertBaseSchema = z23.object({
-  id: z23.uuid(),
-  userId: z23.uuid(),
-  appId: z23.uuid().optional().nullable(),
-  type: z23.string(),
-  message: z23.string(),
-  triggeredAt: z23.date(),
-  isRead: z23.boolean().default(false)
+var AlertBaseSchema = import_zod23.z.object({
+  id: import_zod23.z.uuid(),
+  userId: import_zod23.z.uuid(),
+  appId: import_zod23.z.uuid().optional().nullable(),
+  type: import_zod23.z.string(),
+  message: import_zod23.z.string(),
+  triggeredAt: import_zod23.z.date(),
+  isRead: import_zod23.z.boolean().default(false)
 });
 var AlertReferenceSchema = AlertBaseSchema.pick({
   id: true,
@@ -820,17 +991,17 @@ var AlertReferenceSchema = AlertBaseSchema.pick({
   isRead: true
 });
 var AlertDetailedSchema = AlertBaseSchema.extend({
-  user: z23.lazy(() => UserReferenceSchema),
-  app: z23.lazy(() => AppReferenceSchema).optional().nullable()
+  user: import_zod23.z.lazy(() => UserReferenceSchema),
+  app: import_zod23.z.lazy(() => AppReferenceSchema).optional().nullable()
 });
 
 // src/schemas/allowedOrigin.schema.ts
-import { z as z24 } from "zod";
-var AllowedOriginBaseSchema = z24.object({
-  id: z24.uuid(),
-  organizationId: z24.uuid(),
-  origin: z24.string(),
-  createdAt: z24.date()
+var import_zod24 = require("zod");
+var AllowedOriginBaseSchema = import_zod24.z.object({
+  id: import_zod24.z.uuid(),
+  organizationId: import_zod24.z.uuid(),
+  origin: import_zod24.z.string(),
+  createdAt: import_zod24.z.date()
 });
 var AllowedOriginReferenceSchema = AllowedOriginBaseSchema.pick({
   id: true,
@@ -839,74 +1010,74 @@ var AllowedOriginReferenceSchema = AllowedOriginBaseSchema.pick({
   createdAt: true
 });
 var AllowedOriginDetailedSchema = AllowedOriginBaseSchema.extend({
-  organization: z24.lazy(() => OrganizationReferenceSchema).optional().nullable()
+  organization: import_zod24.z.lazy(() => OrganizationReferenceSchema).optional().nullable()
 });
-var AddAllowedOriginInputSchema = z24.object({
-  organizationId: z24.uuid(),
-  origin: z24.string().min(1)
+var AddAllowedOriginInputSchema = import_zod24.z.object({
+  organizationId: import_zod24.z.uuid(),
+  origin: import_zod24.z.string().min(1)
 });
-var RemoveAllowedOriginInputSchema = z24.object({
-  organizationId: z24.uuid(),
-  origin: z24.string().min(1)
+var RemoveAllowedOriginInputSchema = import_zod24.z.object({
+  organizationId: import_zod24.z.uuid(),
+  origin: import_zod24.z.string().min(1)
 });
 
 // src/schemas/appMetric.schema.ts
-import { z as z25 } from "zod";
-var AppMetricBaseSchema = z25.object({
-  appId: z25.string(),
-  metric: z25.string(),
+var import_zod25 = require("zod");
+var AppMetricBaseSchema = import_zod25.z.object({
+  appId: import_zod25.z.string(),
+  metric: import_zod25.z.string(),
   // e.g., "tokens", "vCPU-hours", "VRAM-MB"
-  value: z25.number(),
-  recordedAt: z25.date().optional()
+  value: import_zod25.z.number(),
+  recordedAt: import_zod25.z.date().optional()
   // optional if you want to default to now
 });
 var AppMetricReferenceSchema = AppMetricBaseSchema.extend({
-  id: z25.uuid(),
-  recordedAt: z25.date()
+  id: import_zod25.z.uuid(),
+  recordedAt: import_zod25.z.date()
   // ensure timestamp exists in reference schema
 });
 var AppMetricDetailedSchema = AppMetricReferenceSchema.extend({
-  app: z25.lazy(() => AppReferenceSchema)
+  app: import_zod25.z.lazy(() => AppReferenceSchema)
 });
 
 // src/schemas/auth.schema.ts
-import { z as z26 } from "zod";
-var AuthResponseSchema = z26.object({
-  user: z26.lazy(() => UserDetailedSchema),
-  token: z26.string()
+var import_zod26 = require("zod");
+var AuthResponseSchema = import_zod26.z.object({
+  user: import_zod26.z.lazy(() => UserDetailedSchema),
+  token: import_zod26.z.string()
 });
-var UserRegisterInputSchema = z26.object({
-  email: z26.email(),
-  password: z26.string(),
-  name: z26.string().optional(),
-  origin: z26.string().optional(),
-  organizationId: z26.uuid().optional()
+var UserRegisterInputSchema = import_zod26.z.object({
+  email: import_zod26.z.email(),
+  password: import_zod26.z.string(),
+  name: import_zod26.z.string().optional(),
+  origin: import_zod26.z.string().optional(),
+  organizationId: import_zod26.z.uuid().optional()
 });
-var UserLoginInputSchema = z26.object({
-  email: z26.email(),
-  password: z26.string(),
-  origin: z26.string().optional(),
-  organizationId: z26.uuid().optional()
+var UserLoginInputSchema = import_zod26.z.object({
+  email: import_zod26.z.email(),
+  password: import_zod26.z.string(),
+  origin: import_zod26.z.string().optional(),
+  organizationId: import_zod26.z.uuid().optional()
 });
-var VerifiedTokenResultSchema = z26.object({
-  userId: z26.string(),
-  organizationId: z26.string().nullable(),
-  planId: z26.string().nullable(),
-  exp: z26.number().optional()
+var VerifiedTokenResultSchema = import_zod26.z.object({
+  userId: import_zod26.z.string(),
+  organizationId: import_zod26.z.string().nullable(),
+  planId: import_zod26.z.string().nullable(),
+  exp: import_zod26.z.number().optional()
 });
 
 // src/schemas/changeLog.schema.ts
-import { z as z27 } from "zod";
-var ChangeLogBaseSchema = z27.object({
-  id: z27.uuid(),
-  tableName: z27.string().min(1, "Table name is required."),
-  recordId: z27.string().min(1, "Record ID is required."),
-  appId: z27.uuid().optional(),
-  action: z27.string().min(1, "Action is required."),
-  changedBy: z27.uuid().optional(),
-  before: z27.any().optional(),
-  after: z27.any().optional(),
-  createdAt: z27.date()
+var import_zod27 = require("zod");
+var ChangeLogBaseSchema = import_zod27.z.object({
+  id: import_zod27.z.uuid(),
+  tableName: import_zod27.z.string().min(1, "Table name is required."),
+  recordId: import_zod27.z.string().min(1, "Record ID is required."),
+  appId: import_zod27.z.uuid().optional(),
+  action: import_zod27.z.string().min(1, "Action is required."),
+  changedBy: import_zod27.z.uuid().optional(),
+  before: import_zod27.z.any().optional(),
+  after: import_zod27.z.any().optional(),
+  createdAt: import_zod27.z.date()
 });
 var ChangeLogReferenceSchema = ChangeLogBaseSchema.pick({
   id: true,
@@ -920,14 +1091,14 @@ var ChangeLogDetailedSchema = ChangeLogBaseSchema.extend({
 });
 
 // src/schemas/eventLog.schema.ts
-import { z as z28 } from "zod";
-var EventLogBaseSchema = z28.object({
-  id: z28.uuid(),
-  appId: z28.uuid(),
-  endUserId: z28.uuid().optional(),
-  type: z28.string(),
-  payload: z28.any(),
-  createdAt: z28.date()
+var import_zod28 = require("zod");
+var EventLogBaseSchema = import_zod28.z.object({
+  id: import_zod28.z.uuid(),
+  appId: import_zod28.z.uuid(),
+  endUserId: import_zod28.z.uuid().optional(),
+  type: import_zod28.z.string(),
+  payload: import_zod28.z.any(),
+  createdAt: import_zod28.z.date()
 });
 var EventLogReferenceSchema = EventLogBaseSchema.pick({
   id: true,
@@ -937,20 +1108,20 @@ var EventLogReferenceSchema = EventLogBaseSchema.pick({
   createdAt: true
 });
 var EventLogDetailedSchema = EventLogBaseSchema.extend({
-  app: z28.lazy(() => AppReferenceSchema),
-  endUser: z28.lazy(() => EndUserReferenceSchema).optional()
+  app: import_zod28.z.lazy(() => AppReferenceSchema),
+  endUser: import_zod28.z.lazy(() => EndUserReferenceSchema).optional()
 });
 
 // src/schemas/featureFlag.schema.ts
-import { z as z29 } from "zod";
-var FeatureFlagBaseSchema = z29.object({
-  id: z29.uuid(),
-  name: z29.string(),
-  description: z29.string().optional(),
-  isActive: z29.boolean(),
-  createdAt: z29.date(),
-  updatedAt: z29.date(),
-  appId: z29.uuid().optional()
+var import_zod29 = require("zod");
+var FeatureFlagBaseSchema = import_zod29.z.object({
+  id: import_zod29.z.uuid(),
+  name: import_zod29.z.string(),
+  description: import_zod29.z.string().optional(),
+  isActive: import_zod29.z.boolean(),
+  createdAt: import_zod29.z.date(),
+  updatedAt: import_zod29.z.date(),
+  appId: import_zod29.z.uuid().optional()
 });
 var FeatureFlagReferenceSchema = FeatureFlagBaseSchema.pick({
   id: true,
@@ -959,19 +1130,19 @@ var FeatureFlagReferenceSchema = FeatureFlagBaseSchema.pick({
   appId: true
 });
 var FeatureFlagDetailedSchema = FeatureFlagBaseSchema.extend({
-  app: z29.lazy(() => AppReferenceSchema).optional()
+  app: import_zod29.z.lazy(() => AppReferenceSchema).optional()
 });
 
 // src/schemas/forecast.schema.ts
-import { z as z30 } from "zod";
-var ForecastBaseSchema = z30.object({
-  id: z30.uuid(),
-  appId: z30.uuid(),
-  metric: z30.string(),
-  predicted: z30.number(),
-  startDate: z30.date(),
-  endDate: z30.date(),
-  createdAt: z30.date()
+var import_zod30 = require("zod");
+var ForecastBaseSchema = import_zod30.z.object({
+  id: import_zod30.z.uuid(),
+  appId: import_zod30.z.uuid(),
+  metric: import_zod30.z.string(),
+  predicted: import_zod30.z.number(),
+  startDate: import_zod30.z.date(),
+  endDate: import_zod30.z.date(),
+  createdAt: import_zod30.z.date()
 });
 var ForecastReferenceSchema = ForecastBaseSchema.pick({
   id: true,
@@ -981,66 +1152,66 @@ var ForecastReferenceSchema = ForecastBaseSchema.pick({
   endDate: true
 });
 var ForecastDetailedSchema = ForecastBaseSchema.extend({
-  app: z30.lazy(() => AppReferenceSchema)
+  app: import_zod30.z.lazy(() => AppReferenceSchema)
 });
 
 // src/schemas/globalAllowedOrigin.schema.ts
-import { z as z31 } from "zod";
-var GlobalAllowedOriginSchema = z31.object({
-  id: z31.uuid(),
-  origin: z31.url().or(z31.string().regex(/^https?:\/\/[a-zA-Z0-9.-]+(:[0-9]+)?$/)),
+var import_zod31 = require("zod");
+var GlobalAllowedOriginSchema = import_zod31.z.object({
+  id: import_zod31.z.uuid(),
+  origin: import_zod31.z.url().or(import_zod31.z.string().regex(/^https?:\/\/[a-zA-Z0-9.-]+(:[0-9]+)?$/)),
   // allow localhost or custom domains
-  createdAt: z31.date()
+  createdAt: import_zod31.z.date()
 });
 var GlobalAllowedOriginDetailedSchema = GlobalAllowedOriginSchema.extend({
-  referencedBy: z31.array(
-    z31.object({
-      organizationId: z31.uuid().nullable(),
-      organizationName: z31.string().nullable()
+  referencedBy: import_zod31.z.array(
+    import_zod31.z.object({
+      organizationId: import_zod31.z.uuid().nullable(),
+      organizationName: import_zod31.z.string().nullable()
     })
   ).optional()
 });
 
 // src/schemas/integration.schema.ts
-import { z as z32 } from "zod";
-var IntegrationBaseSchema = z32.object({
-  id: z32.uuid(),
-  appId: z32.uuid(),
-  type: z32.string(),
-  config: z32.any(),
-  createdAt: z32.date()
+var import_zod32 = require("zod");
+var IntegrationBaseSchema = import_zod32.z.object({
+  id: import_zod32.z.uuid(),
+  appId: import_zod32.z.uuid(),
+  type: import_zod32.z.string(),
+  config: import_zod32.z.any(),
+  createdAt: import_zod32.z.date()
 });
 var IntegrationReferenceSchema = IntegrationBaseSchema.pick({
   id: true,
   type: true
 });
 var IntegrationDetailedSchema = IntegrationBaseSchema.extend({
-  app: z32.lazy(() => AppReferenceSchema)
+  app: import_zod32.z.lazy(() => AppReferenceSchema)
 });
 
 // src/schemas/openmeter.shema.ts
-import { z as z33 } from "zod";
-var OpenMeterUsageEntrySchema = z33.object({
-  userId: z33.uuid(),
-  feature: z33.string(),
+var import_zod33 = require("zod");
+var OpenMeterUsageEntrySchema = import_zod33.z.object({
+  userId: import_zod33.z.uuid(),
+  feature: import_zod33.z.string(),
   // Could also use FeatureEnum
-  usage: z33.number().nonnegative(),
-  organizationId: z33.uuid().optional(),
-  apiKeyId: z33.uuid().optional(),
-  sessionId: z33.uuid().optional(),
-  createdAt: z33.date().optional(),
-  metadata: z33.record(z33.string(), z33.any()).optional()
+  usage: import_zod33.z.number().nonnegative(),
+  organizationId: import_zod33.z.uuid().optional(),
+  apiKeyId: import_zod33.z.uuid().optional(),
+  sessionId: import_zod33.z.uuid().optional(),
+  createdAt: import_zod33.z.date().optional(),
+  metadata: import_zod33.z.record(import_zod33.z.string(), import_zod33.z.any()).optional()
 });
 
 // src/schemas/sdkLog.schema.ts
-import { z as z34 } from "zod";
-var SdkLogBaseSchema = z34.object({
-  id: z34.uuid(),
-  appId: z34.string(),
-  endUserId: z34.string().optional(),
-  method: z34.string(),
-  payload: z34.any(),
-  createdAt: z34.date()
+var import_zod34 = require("zod");
+var SdkLogBaseSchema = import_zod34.z.object({
+  id: import_zod34.z.uuid(),
+  appId: import_zod34.z.string(),
+  endUserId: import_zod34.z.string().optional(),
+  method: import_zod34.z.string(),
+  payload: import_zod34.z.any(),
+  createdAt: import_zod34.z.date()
 });
 var SdkLogReferenceSchema = SdkLogBaseSchema.pick({
   id: true,
@@ -1048,92 +1219,92 @@ var SdkLogReferenceSchema = SdkLogBaseSchema.pick({
   createdAt: true
 });
 var SdkLogDetailedSchema = SdkLogBaseSchema.extend({
-  app: z34.lazy(() => AppReferenceSchema),
-  endUser: z34.lazy(() => EndUserReferenceSchema).optional()
+  app: import_zod34.z.lazy(() => AppReferenceSchema),
+  endUser: import_zod34.z.lazy(() => EndUserReferenceSchema).optional()
 });
 
 // src/schemas/usage.schema.ts
-import { z as z35 } from "zod";
-var UsageByFeatureSchema = z35.object({
+var import_zod35 = require("zod");
+var UsageByFeatureSchema = import_zod35.z.object({
   feature: FeatureEnum,
-  usage: z35.number()
+  usage: import_zod35.z.number()
 });
-var MonthlyUsageSchema = z35.object({
-  month: z35.string(),
+var MonthlyUsageSchema = import_zod35.z.object({
+  month: import_zod35.z.string(),
   // e.g., "2025-10"
-  usage: z35.number(),
-  totalCost: z35.number().optional(),
-  breakdown: z35.record(z35.string(), z35.number()).optional(),
-  logs: z35.array(UsageLogReferenceSchema).optional()
+  usage: import_zod35.z.number(),
+  totalCost: import_zod35.z.number().optional(),
+  breakdown: import_zod35.z.record(import_zod35.z.string(), import_zod35.z.number()).optional(),
+  logs: import_zod35.z.array(UsageLogReferenceSchema).optional()
 });
-var UsageSummarySchema = z35.object({
-  currentUsage: z35.number(),
-  usageLimit: z35.number().optional(),
-  periodStart: z35.string(),
-  periodEnd: z35.string(),
-  isOverLimit: z35.boolean(),
-  history: z35.array(MonthlyUsageSchema).optional(),
-  estimatedCost: z35.number().optional()
+var UsageSummarySchema = import_zod35.z.object({
+  currentUsage: import_zod35.z.number(),
+  usageLimit: import_zod35.z.number().optional(),
+  periodStart: import_zod35.z.string(),
+  periodEnd: import_zod35.z.string(),
+  isOverLimit: import_zod35.z.boolean(),
+  history: import_zod35.z.array(MonthlyUsageSchema).optional(),
+  estimatedCost: import_zod35.z.number().optional()
 });
-var UsageSummaryChartSchema = z35.object({
-  totalUsage: z35.number(),
-  currentMonthUsage: z35.number(),
-  monthlyHistory: z35.array(MonthlyUsageSchema),
-  byFeature: z35.array(UsageByFeatureSchema),
-  planLimit: z35.number().optional(),
-  percentUsed: z35.number().optional()
+var UsageSummaryChartSchema = import_zod35.z.object({
+  totalUsage: import_zod35.z.number(),
+  currentMonthUsage: import_zod35.z.number(),
+  monthlyHistory: import_zod35.z.array(MonthlyUsageSchema),
+  byFeature: import_zod35.z.array(UsageByFeatureSchema),
+  planLimit: import_zod35.z.number().optional(),
+  percentUsed: import_zod35.z.number().optional()
 });
-var RecordUsageInputSchema = z35.object({
-  userId: z35.number(),
+var RecordUsageInputSchema = import_zod35.z.object({
+  userId: import_zod35.z.number(),
   feature: FeatureEnum,
-  usage: z35.number(),
-  sessionId: z35.string().optional(),
-  unitCost: z35.number().optional(),
-  organizationId: z35.number().optional(),
-  metadata: z35.record(z35.string(), z35.any()).optional(),
-  billed: z35.boolean().optional(),
-  timestamp: z35.preprocess(
+  usage: import_zod35.z.number(),
+  sessionId: import_zod35.z.string().optional(),
+  unitCost: import_zod35.z.number().optional(),
+  organizationId: import_zod35.z.number().optional(),
+  metadata: import_zod35.z.record(import_zod35.z.string(), import_zod35.z.any()).optional(),
+  billed: import_zod35.z.boolean().optional(),
+  timestamp: import_zod35.z.preprocess(
     (arg) => arg ? new Date(arg) : void 0,
-    z35.date().optional()
+    import_zod35.z.date().optional()
   )
 });
-var UsageThresholdAlertSchema = z35.object({
-  userId: z35.number(),
-  used: z35.number(),
-  max: z35.number()
+var UsageThresholdAlertSchema = import_zod35.z.object({
+  userId: import_zod35.z.number(),
+  used: import_zod35.z.number(),
+  max: import_zod35.z.number()
 });
 var UsageLogWithUserSchema = UsageLogReferenceSchema.extend({
   user: UserReferenceSchema.optional()
 });
-var UsageLogsTableSchema = z35.object({
-  logs: z35.array(UsageLogWithUserSchema),
-  totalCount: z35.number()
+var UsageLogsTableSchema = import_zod35.z.object({
+  logs: import_zod35.z.array(UsageLogWithUserSchema),
+  totalCount: import_zod35.z.number()
 });
-var UsageSummaryItemSchema = z35.object({
+var UsageSummaryItemSchema = import_zod35.z.object({
   feature: FeatureEnum,
-  totalUsage: z35.number()
+  totalUsage: import_zod35.z.number()
 });
-var OrgUsageSummaryItemSchema = z35.object({
+var OrgUsageSummaryItemSchema = import_zod35.z.object({
   feature: FeatureEnum,
-  _sum: z35.object({
-    usage: z35.number().nullable()
+  _sum: import_zod35.z.object({
+    usage: import_zod35.z.number().nullable()
   })
 });
-var OrgUsageSummarySchema = z35.array(OrgUsageSummaryItemSchema);
+var OrgUsageSummarySchema = import_zod35.z.array(OrgUsageSummaryItemSchema);
 
 // src/schemas/usageLimit.schema.ts
-import { z as z36 } from "zod";
-var UsageLimitBaseSchema = z36.object({
-  id: z36.uuid(),
-  appId: z36.string(),
-  endUserId: z36.string().optional(),
-  metric: z36.string(),
-  limit: z36.number(),
-  period: z36.enum(["daily", "weekly", "monthly", "yearly", "lifetime"]),
-  metadata: z36.record(z36.string(), z36.any()).optional(),
-  resetAt: z36.date().optional(),
-  createdAt: z36.date(),
-  updatedAt: z36.date().optional()
+var import_zod36 = require("zod");
+var UsageLimitBaseSchema = import_zod36.z.object({
+  id: import_zod36.z.uuid(),
+  appId: import_zod36.z.string(),
+  endUserId: import_zod36.z.string().optional(),
+  metric: import_zod36.z.string(),
+  limit: import_zod36.z.number(),
+  period: import_zod36.z.enum(["daily", "weekly", "monthly", "yearly", "lifetime"]),
+  metadata: import_zod36.z.record(import_zod36.z.string(), import_zod36.z.any()).optional(),
+  resetAt: import_zod36.z.date().optional(),
+  createdAt: import_zod36.z.date(),
+  updatedAt: import_zod36.z.date().optional()
 });
 var UsageLimitReferenceSchema = UsageLimitBaseSchema.pick({
   id: true,
@@ -1143,41 +1314,41 @@ var UsageLimitReferenceSchema = UsageLimitBaseSchema.pick({
   createdAt: true
 });
 var UsageLimitDetailedSchema = UsageLimitBaseSchema.extend({
-  app: z36.lazy(() => AppReferenceSchema),
-  endUser: z36.lazy(() => EndUserReferenceSchema).optional()
+  app: import_zod36.z.lazy(() => AppReferenceSchema),
+  endUser: import_zod36.z.lazy(() => EndUserReferenceSchema).optional()
 });
 
 // src/schemas/usagePayload.schema.ts
-import { z as z37 } from "zod";
-var UsagePayloadSchema = z37.object({
-  feature: z37.enum(AI_FEATURES),
-  usage: z37.number().min(0),
-  sessionId: z37.uuid().optional(),
-  appId: z37.string().optional(),
-  endUserId: z37.string().optional(),
-  organizationId: z37.string().optional(),
-  ipAddress: z37.string().optional(),
-  userAgent: z37.string().optional(),
+var import_zod37 = require("zod");
+var UsagePayloadSchema = import_zod37.z.object({
+  feature: import_zod37.z.enum(AI_FEATURES),
+  usage: import_zod37.z.number().min(0),
+  sessionId: import_zod37.z.uuid().optional(),
+  appId: import_zod37.z.string().optional(),
+  endUserId: import_zod37.z.string().optional(),
+  organizationId: import_zod37.z.string().optional(),
+  ipAddress: import_zod37.z.string().optional(),
+  userAgent: import_zod37.z.string().optional(),
   modelUsage: ModelUsageInputSchema.partial().optional(),
-  metadata: z37.record(z37.string(), z37.any()).optional()
+  metadata: import_zod37.z.record(import_zod37.z.string(), import_zod37.z.any()).optional()
 });
 
 // src/schemas/usagePricing.schema.ts
-import { z as z38 } from "zod";
-var UsagePricingBaseSchema = z38.object({
-  id: z38.uuid(),
-  appId: z38.uuid(),
-  metric: z38.string(),
-  pricePerUnit: z38.number(),
-  currency: z38.string().default("usd"),
-  unitName: z38.string().optional(),
+var import_zod38 = require("zod");
+var UsagePricingBaseSchema = import_zod38.z.object({
+  id: import_zod38.z.uuid(),
+  appId: import_zod38.z.uuid(),
+  metric: import_zod38.z.string(),
+  pricePerUnit: import_zod38.z.number(),
+  currency: import_zod38.z.string().default("usd"),
+  unitName: import_zod38.z.string().optional(),
   // e.g., "tokens", "requests"
-  billingCycle: z38.enum(["monthly", "yearly"]).default("monthly"),
-  tiered: z38.boolean().optional(),
+  billingCycle: import_zod38.z.enum(["monthly", "yearly"]).default("monthly"),
+  tiered: import_zod38.z.boolean().optional(),
   // future support for tiered pricing
-  metadata: z38.record(z38.string(), z38.any()).optional(),
-  createdAt: z38.date(),
-  updatedAt: z38.date().optional()
+  metadata: import_zod38.z.record(import_zod38.z.string(), import_zod38.z.any()).optional(),
+  createdAt: import_zod38.z.date(),
+  updatedAt: import_zod38.z.date().optional()
 });
 var UsagePricingReferenceSchema = UsagePricingBaseSchema.pick({
   id: true,
@@ -1187,148 +1358,10 @@ var UsagePricingReferenceSchema = UsagePricingBaseSchema.pick({
   unitName: true
 });
 var UsagePricingDetailedSchema = UsagePricingBaseSchema.extend({
-  app: z38.lazy(() => AppReferenceSchema)
+  app: import_zod38.z.lazy(() => AppReferenceSchema)
 });
 
 // src/transformer.ts
-import superjson from "superjson";
-var transformer = superjson;
-export {
-  AI_FEATURES,
-  API_KEY_ENVIRONMENTS,
-  API_KEY_PREFIXES,
-  AddAllowedOriginInputSchema,
-  AlertBaseSchema,
-  AlertDetailedSchema,
-  AlertReferenceSchema,
-  AllowedOriginBaseSchema,
-  AllowedOriginDetailedSchema,
-  AllowedOriginReferenceSchema,
-  ApiKeyBaseSchema,
-  ApiKeyDetailedSchema,
-  ApiKeyReferenceSchema,
-  AppApiKeyBaseSchema,
-  AppApiKeyDetailedSchema,
-  AppApiKeyReferenceSchema,
-  AppBaseSchema,
-  AppDetailedSchema,
-  AppMetricBaseSchema,
-  AppMetricDetailedSchema,
-  AppMetricReferenceSchema,
-  AppReferenceSchema,
-  AuditLogBaseSchema,
-  AuditLogDetailedSchema,
-  AuditLogReferenceSchema,
-  AuthResponseSchema,
-  COOKIE_NAME,
-  COOKIE_OPTIONS,
-  ChangeLogBaseSchema,
-  ChangeLogDetailedSchema,
-  ChangeLogReferenceSchema,
-  ChargeBaseSchema,
-  ChargeDetailedSchema,
-  ChargeReferenceSchema,
-  CountMetricsSchema,
-  CreateApiKeyInputSchema,
-  CreateOrganizationInputSchema,
-  EndUserBaseSchema,
-  EndUserDetailedSchema,
-  EndUserReferenceSchema,
-  EventLogBaseSchema,
-  EventLogDetailedSchema,
-  EventLogReferenceSchema,
-  FeatureEnum,
-  FeatureFlagBaseSchema,
-  FeatureFlagDetailedSchema,
-  FeatureFlagReferenceSchema,
-  ForecastBaseSchema,
-  ForecastDetailedSchema,
-  ForecastReferenceSchema,
-  GlobalAllowedOriginDetailedSchema,
-  GlobalAllowedOriginSchema,
-  IntegrationBaseSchema,
-  IntegrationDetailedSchema,
-  IntegrationReferenceSchema,
-  InvoiceBaseSchema,
-  InvoiceDetailedSchema,
-  InvoiceItemBaseSchema,
-  InvoiceItemDetailedSchema,
-  InvoiceItemReferenceSchema,
-  InvoiceReferenceSchema,
-  JwtPayloadSchema,
-  MFABaseSchema,
-  MFADetailedSchema,
-  MFAReferenceSchema,
-  ModelUsageBaseSchema,
-  ModelUsageDetailedSchema,
-  ModelUsageInputSchema,
-  ModelUsageReferenceSchema,
-  MonthlyUsageSchema,
-  OpenMeterUsageEntrySchema,
-  OrgUsageSummaryItemSchema,
-  OrgUsageSummarySchema,
-  OrganizationBaseSchema,
-  OrganizationDetailedSchema,
-  OrganizationPlanBaseSchema,
-  OrganizationPlanDetailedSchema,
-  OrganizationPlanReferenceSchema,
-  OrganizationReferenceSchema,
-  PlanBaseSchema,
-  PlanDetailedSchema,
-  PlanFeatureBaseSchema,
-  PlanFeatureDetailedSchema,
-  PlanFeatureReferenceSchema,
-  PlanReferenceSchema,
-  RecordUsageInputSchema,
-  RemoveAllowedOriginInputSchema,
-  RevenueSplitBaseSchema,
-  RevenueSplitDetailedSchema,
-  RevenueSplitReferenceSchema,
-  ReviewBaseSchema,
-  ReviewDetailedSchema,
-  ReviewReferenceSchema,
-  ReviewStatusEnum,
-  RoleBaseSchema,
-  RoleDetailedSchema,
-  RoleReferenceSchema,
-  SdkLogBaseSchema,
-  SdkLogDetailedSchema,
-  SdkLogReferenceSchema,
-  SessionMetricsSchema,
-  UpdateOrganizationInputSchema,
-  UsageByFeatureSchema,
-  UsageLimitBaseSchema,
-  UsageLimitDetailedSchema,
-  UsageLimitReferenceSchema,
-  UsageLogBaseSchema,
-  UsageLogDetailedSchema,
-  UsageLogReferenceSchema,
-  UsageLogWithUserSchema,
-  UsageLogsTableSchema,
-  UsagePayloadSchema,
-  UsagePricingBaseSchema,
-  UsagePricingDetailedSchema,
-  UsagePricingReferenceSchema,
-  UsageSummaryChartSchema,
-  UsageSummaryItemSchema,
-  UsageSummarySchema,
-  UsageThresholdAlertSchema,
-  UserBaseSchema,
-  UserDetailedSchema,
-  UserLoginInputSchema,
-  UserPreferencesBaseSchema,
-  UserPreferencesDetailedSchema,
-  UserPreferencesReferenceSchema,
-  UserReferenceSchema,
-  UserRegisterInputSchema,
-  UserSessionBaseSchema,
-  UserSessionDetailedSchema,
-  UserSessionReferenceSchema,
-  VerifiedTokenResultSchema,
-  decodeJwt,
-  getAuthCookieName,
-  signJwt,
-  transformer,
-  verifyJwt
-};
+var import_superjson = __toESM(require("superjson"));
+var transformer = import_superjson.default;
 //# sourceMappingURL=index.js.map
