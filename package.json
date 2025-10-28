@@ -14,7 +14,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --dts --format cjs,esm --out-dir dist"
+    "build": "echo 'dist already built'",
+    "prepare": "echo 'dist already built'"
   },
   "dependencies": {
     "jose": "^6.1.0"

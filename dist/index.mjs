@@ -1190,6 +1190,44 @@ var UsagePricingDetailedSchema = UsagePricingBaseSchema.extend({
   app: z38.lazy(() => AppReferenceSchema)
 });
 
+// src/schemas/waitlist.schema.ts
+import { z as z39 } from "zod";
+var WaitlistBaseSchema = z39.object({
+  id: z39.uuid(),
+  email: z39.email(),
+  name: z39.string().optional(),
+  company: z39.string().optional(),
+  role: z39.string().optional(),
+  interest: z39.string().optional(),
+  importance: z39.number().min(1).max(5).default(1),
+  // how relevant / valuable this lead is
+  source: z39.string().optional(),
+  // where they heard about us (social, site, referral)
+  notes: z39.string().optional(),
+  // optional freeform notes
+  createdAt: z39.date()
+  // populated by DB
+});
+var WaitlistReferenceSchema = WaitlistBaseSchema.pick({
+  id: true,
+  email: true,
+  name: true,
+  importance: true
+});
+var WaitlistCreateSchema = z39.object({
+  email: z39.email(),
+  name: z39.string().optional(),
+  company: z39.string().optional(),
+  role: z39.string().optional(),
+  interest: z39.string().optional(),
+  source: z39.string().optional(),
+  importance: z39.number().min(1).max(5).optional(),
+  notes: z39.string().optional()
+});
+var WaitlistDetailedSchema = WaitlistBaseSchema.extend({
+  updatedAt: z39.date().optional()
+});
+
 // src/transformer.ts
 import superjson from "superjson";
 var transformer = superjson;
@@ -1325,6 +1363,10 @@ export {
   UserSessionDetailedSchema,
   UserSessionReferenceSchema,
   VerifiedTokenResultSchema,
+  WaitlistBaseSchema,
+  WaitlistCreateSchema,
+  WaitlistDetailedSchema,
+  WaitlistReferenceSchema,
   decodeJwt,
   getAuthCookieName,
   signJwt,

@@ -161,6 +161,10 @@ __export(index_exports, {
   UserSessionDetailedSchema: () => UserSessionDetailedSchema,
   UserSessionReferenceSchema: () => UserSessionReferenceSchema,
   VerifiedTokenResultSchema: () => VerifiedTokenResultSchema,
+  WaitlistBaseSchema: () => WaitlistBaseSchema,
+  WaitlistCreateSchema: () => WaitlistCreateSchema,
+  WaitlistDetailedSchema: () => WaitlistDetailedSchema,
+  WaitlistReferenceSchema: () => WaitlistReferenceSchema,
   decodeJwt: () => decodeJwt,
   getAuthCookieName: () => getAuthCookieName,
   signJwt: () => signJwt,
@@ -1359,6 +1363,44 @@ var UsagePricingReferenceSchema = UsagePricingBaseSchema.pick({
 });
 var UsagePricingDetailedSchema = UsagePricingBaseSchema.extend({
   app: import_zod38.z.lazy(() => AppReferenceSchema)
+});
+
+// src/schemas/waitlist.schema.ts
+var import_zod39 = require("zod");
+var WaitlistBaseSchema = import_zod39.z.object({
+  id: import_zod39.z.uuid(),
+  email: import_zod39.z.email(),
+  name: import_zod39.z.string().optional(),
+  company: import_zod39.z.string().optional(),
+  role: import_zod39.z.string().optional(),
+  interest: import_zod39.z.string().optional(),
+  importance: import_zod39.z.number().min(1).max(5).default(1),
+  // how relevant / valuable this lead is
+  source: import_zod39.z.string().optional(),
+  // where they heard about us (social, site, referral)
+  notes: import_zod39.z.string().optional(),
+  // optional freeform notes
+  createdAt: import_zod39.z.date()
+  // populated by DB
+});
+var WaitlistReferenceSchema = WaitlistBaseSchema.pick({
+  id: true,
+  email: true,
+  name: true,
+  importance: true
+});
+var WaitlistCreateSchema = import_zod39.z.object({
+  email: import_zod39.z.email(),
+  name: import_zod39.z.string().optional(),
+  company: import_zod39.z.string().optional(),
+  role: import_zod39.z.string().optional(),
+  interest: import_zod39.z.string().optional(),
+  source: import_zod39.z.string().optional(),
+  importance: import_zod39.z.number().min(1).max(5).optional(),
+  notes: import_zod39.z.string().optional()
+});
+var WaitlistDetailedSchema = WaitlistBaseSchema.extend({
+  updatedAt: import_zod39.z.date().optional()
 });
 
 // src/transformer.ts
