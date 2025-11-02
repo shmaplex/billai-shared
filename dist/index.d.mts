@@ -2776,7 +2776,7 @@ declare const UsageLogBaseSchema: z.ZodObject<{
     openMeterReported: z.ZodOptional<z.ZodNullable<z.ZodBoolean>>;
     openMeterId: z.ZodOptional<z.ZodNullable<z.ZodString>>;
     deletedAt: z.ZodOptional<z.ZodNullable<z.ZodDate>>;
-    metadata: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+    metadata: z.ZodOptional<z.ZodNullable<z.ZodAny>>;
 }, z.core.$strip>;
 /**
  * Reference schema — minimal version for lightweight embedding
@@ -2830,7 +2830,7 @@ declare const UsageLogDetailedSchema: z.ZodObject<{
     openMeterReported: z.ZodOptional<z.ZodNullable<z.ZodBoolean>>;
     openMeterId: z.ZodOptional<z.ZodNullable<z.ZodString>>;
     deletedAt: z.ZodOptional<z.ZodNullable<z.ZodDate>>;
-    metadata: z.ZodOptional<z.ZodRecord<z.ZodString, z.ZodAny>>;
+    metadata: z.ZodOptional<z.ZodNullable<z.ZodAny>>;
     user: z.ZodOptional<z.ZodNullable<z.ZodLazy<z.ZodObject<{
         organizationId: z.ZodOptional<z.ZodNullable<z.ZodUUID>>;
         id: z.ZodUUID;

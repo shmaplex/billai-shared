@@ -781,7 +781,7 @@ var UsageLogBaseSchema = import_zod18.z.object({
   openMeterReported: import_zod18.z.boolean().nullable().optional(),
   openMeterId: import_zod18.z.string().nullable().optional(),
   deletedAt: import_zod18.z.date().nullable().optional(),
-  metadata: import_zod18.z.record(import_zod18.z.string(), import_zod18.z.any()).optional()
+  metadata: import_zod18.z.any().nullable().optional()
 });
 var UsageLogReferenceSchema = UsageLogBaseSchema.pick({
   id: true,

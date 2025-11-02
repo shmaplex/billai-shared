@@ -606,7 +606,7 @@ var UsageLogBaseSchema = z18.object({
   openMeterReported: z18.boolean().nullable().optional(),
   openMeterId: z18.string().nullable().optional(),
   deletedAt: z18.date().nullable().optional(),
-  metadata: z18.record(z18.string(), z18.any()).optional()
+  metadata: z18.any().nullable().optional()
 });
 var UsageLogReferenceSchema = UsageLogBaseSchema.pick({
   id: true,
