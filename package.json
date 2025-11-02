@@ -16,7 +16,6 @@
   "scripts": {
     "build": "echo 'dist already built'",
     "prepare": "echo 'dist already built'",
-    "version": "npm version ",
     "deploy": "npm publish"
   },
   "dependencies": {
